@@ -1,6 +1,7 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   mode: 'production',
@@ -32,12 +33,22 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
-    new HtmlWebPackPlugin({
+    new HtmlWebpackPlugin({
       template: "./src/popup.html",
       filename: "../popup.html",
       chunks: ['popup'],
       minify: false
-    })
+    }),
+    new CopyWebpackPlugin([
+      {
+        from: './src/images',
+        to: './dist/images',
+      },
+      {
+        from: './src/manifest.json',
+        to: './dist/manifest.json',
+      }
+    ]),
   ],
   resolve: {
     extensions: ['.ts', '.js']
