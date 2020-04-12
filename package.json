@@ -1,0 +1,27 @@
+{
+  "name": "shopify-admin-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "author": "Edmond Akpan",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.0.104",
+    "css-loader": "^3.5.2",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "vue-loader": "^15.9.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "vue-ts-webpack-boilerplate",
+  "version": "1.0",
+  "description": "Usage admin api",
+  "icons": {
+    "16": "images/icon_16.png",
+    "32": "images/icon_32.png",
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": ["scripts/background.js"]
+  },
+  "permissions": ["webNavigation", "declarativeContent"],
+  "page_action": {
+    "default_icon": {
+      "16": "images/icon_16.png",
+      "32": "images/icon_32.png",
+      "48": "images/icon_48.png",
+      "128": "images/icon_128.png"
+    },
+    "default_title": "vue-ts-webpack-boilerplate",
+    "default_popup": "popup.html"
+  }
+}
