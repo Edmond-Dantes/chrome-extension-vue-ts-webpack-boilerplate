@@ -34,8 +34,9 @@ module.exports = {
     new VueLoaderPlugin(),
     new HtmlWebPackPlugin({
       template: "./src/popup.html",
-      filename: "popup.html",
-      chunks: ['popup']
+      filename: "../popup.html",
+      chunks: ['popup'],
+      minify: false
     })
   ],
   resolve: {
