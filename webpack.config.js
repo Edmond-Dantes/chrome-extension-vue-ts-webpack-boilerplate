@@ -1,5 +1,6 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: 'production',
@@ -30,7 +31,12 @@ module.exports = {
     ]
   },
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new HtmlWebPackPlugin({
+      template: "./src/popup.html",
+      filename: "popup.html",
+      chunks: ['popup']
+    })
   ],
   resolve: {
     extensions: ['.ts', '.js']

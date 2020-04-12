@@ -1,7 +1,7 @@
 {
-  "name": "shopify-admin-api",
+  "name": "chrome-extension-vue-ts-webpack-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "chrome extension boilerplate with vue, typescript, and webpack",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,6 +16,7 @@
   "devDependencies": {
     "@types/chrome": "0.0.104",
     "css-loader": "^3.5.2",
+    "html-webpack-plugin": "^4.2.0",
     "ts-loader": "^6.2.2",
     "typescript": "^3.8.3",
     "vue-loader": "^15.9.1",
